@@ -76,8 +76,6 @@ As tabelas acima e, no fim, uma lista numerada de perguntas para eu decidir.
 Pare e aguarde minhas respostas.
 ```
 
-Este prompt separa a leitura da escrita. A classificação em DECIDIDO, DESCARTADO, ADIADO e EM ABERTO e a caça explícita a divergências trouxeram à tona, antes de qualquer documento, problemas como a conta das "5 tentativas" que não fecha e a falta de vínculo entre `User` e `Customer` no schema.
-
 **2. ADRs**
 
 ```text
@@ -230,7 +228,7 @@ Acrescente a seção "## PRD" ao Tracker (IDs PRD-{CTX|PROB|CEN|OBJ|ESC|FR|NFR|D
 e valide.
 ```
 
-**Script de validação do Tracker**, pedido nos prompts 2 a 5 e rodado a cada documento:
+**Script de validação do Tracker**, rodado a cada documento:
 
 ```python
 for r in rows:  # cada linha do TRACKER.md
